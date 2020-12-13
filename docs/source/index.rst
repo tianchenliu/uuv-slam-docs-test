@@ -28,6 +28,7 @@ Guide
    :maxdepth: 3
    :caption: Contents:
    
+   installation
    license
    help
 
