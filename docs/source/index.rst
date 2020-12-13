@@ -6,23 +6,8 @@
 UUV SLAM Project Documentation
 ==============================
 
-
-Introduction
-============
-
-Some text
-
-
-Usage
-==========
-
-To insert a piece of code.::
-
-   print(hello)
-   >> hello
-
-Guide
-*****
+This website is used for the instructions, tutorials and study materials for 
+underwater vehicle SLAM project at University of Maryland, College Park.
 
 .. toctree::
    :maxdepth: 3
@@ -30,8 +15,7 @@ Guide
    
    installation
    license
-   help
-
+   contact
 
 
 Indices and tables
