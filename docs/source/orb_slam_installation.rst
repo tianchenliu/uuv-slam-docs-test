@@ -27,5 +27,38 @@ Build ::
     chmod +x build.sh
     ./build.sh
 
+Fix compile issue, add ::
+
+    #include <unistd.h> 
+
+in System.h. 
+
+
+Monocular Examples
+---------------------------
+
+Download a sequence from http://vision.in.tum.de/data/datasets/rgbd-dataset/download 
+and uncompress it.
+
+Execute the following command. Change TUMX.yaml to TUM1.yaml,TUM2.yaml or TUM3.yaml for freiburg1, freiburg2 and freiburg3 sequences respectively. Change PATH_TO_SEQUENCE_FOLDER to the uncompressed sequence folder. ::
+
+    ./Examples/Monocular/mono_tum Vocabulary/ORBvoc.txt Examples/Monocular/TUMX.yaml PATH_TO_SEQUENCE_FOLDER
+
+
+Stereo Examples
+---------------------
+
+
+
+
+RGB-D Example
+----------------
+
+
+
+ROS Example
+-----------------
+
+
 
 
