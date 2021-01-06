@@ -17,6 +17,7 @@ underwater vehicle SLAM project at University of Maryland, College Park.
    opencv_installation
    orb_slam_installation
    carla
+   datasets
    license
    contact
 
