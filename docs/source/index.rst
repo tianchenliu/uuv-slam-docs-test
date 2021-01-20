@@ -27,7 +27,8 @@ underwater vehicle SLAM project at University of Maryland, College Park.
    :maxdepth: 2
    :caption: Simulators   
 
-   sections/carla
+   sections/simulators/comparison
+   sections/simulators/carla
    
 .. toctree::
    :maxdepth: 2
