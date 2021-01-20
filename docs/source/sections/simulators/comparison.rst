@@ -3,7 +3,7 @@ Comparison of Simulators
 
 
 .. csv-table:: Table 1: Comparison of Autonomous Simulators
-   :file: ../../_tables/simulator.csv
+   :file: ../../_tables/simulators.csv
    :header-rows: 1
 
 
