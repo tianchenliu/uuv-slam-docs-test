@@ -10,16 +10,31 @@ This website is used for the instructions, tutorials and study materials for
 underwater vehicle SLAM project at University of Maryland, College Park.
 
 .. toctree::
-   :maxdepth: 3
-   :caption: Contents:
+   :maxdepth: 1
+   :caption: Introduction
+
+   sections/intro
    
-   installation
-   opencv_installation
-   orb_slam_installation
-   carla
-   datasets
-   license
-   contact
+.. toctree::
+   :maxdepth: 2
+   :caption: Installation
+
+   sections/installation/installation
+   sections/installation/opencv_installation
+   sections/installation/orb_slam_installation
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: Simulators   
+
+   sections/carla
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: Datasets    
+   
+   sections/datasets
+
 
 
 Indices and tables
