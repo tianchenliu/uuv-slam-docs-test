@@ -47,6 +47,11 @@ Execute the following command. Change TUMX.yaml to TUM1.yaml,TUM2.yaml or TUM3.y
 
     ./Examples/Monocular/mono_tum Vocabulary/ORBvoc.txt Examples/Monocular/TUMX.yaml PATH_TO_SEQUENCE_FOLDER
 
+Quick test: ::
+
+    ./Examples/Monocular/mono_tum Vocabulary/ORBvoc.txt Examples/Monocular/TUM1.yaml /media/tliu/WD_PassPort_1/slam_datasets/tum/rgbd_dataset_freiburg1_xyz
+
+
 
 Stereo Examples
 ---------------------
