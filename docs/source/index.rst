@@ -36,6 +36,12 @@ underwater vehicle SLAM project at University of Maryland, College Park.
    
    sections/datasets
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Run
+
+   sections/run/run_orb_slam
+
 
 
 Indices and tables
