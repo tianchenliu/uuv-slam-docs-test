@@ -10,18 +10,24 @@ Test: ::
 Run ORB SLAM in ROS
 ---------------------
 
+Monocular Mode Example
+
+Tab 1 ::
+    roscore
+    
+Tab 2 ::
+    rosrun ORB_SLAM2 Mono Vocabulary/ORBvoc.txt Examples/Monocular/TUM1.yaml 
+
+
 Stereo Mode Example
 
 Tab 1 ::
-
     roscore
 
 Tab 2 ::
-
     rosrun ORB_SLAM2 Stereo Vocabulary/ORBvoc.txt Examples/Stereo/EuRoC.yaml true
 
 Tab 3 ::
-
     rosbag play --pause /media/tliu/WD_PassPort_1/slam_datasets/EuRoC/V1_01_easy.bag /cam0/image_raw:=/camera/left/image_raw /cam1/image_raw:=/camera/right/image_raw
 
 Enter space after reading in rosbag info
