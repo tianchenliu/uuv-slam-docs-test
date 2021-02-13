@@ -47,7 +47,7 @@ Tab 2 ::
 Tab 3 ::
     
     source devel/setup.bash
-    rosrun ORB_SLAM2 Mono rosrun ORB_SLAM2 Mono src/ORB_SLAM2/Vocabulary/ORBvoc.txt src/ORB_SLAM2/Examples/Monocular/TUM1.yaml 
+    rosrun ORB_SLAM2 Mono src/ORB_SLAM2/Vocabulary/ORBvoc.txt src/ORB_SLAM2/Examples/Monocular/TUM1.yaml 
 
 
 Plot ORB SLAM Trajectory Results
@@ -58,7 +58,7 @@ Install `evo <https://github.com/MichaelGrupp/evo/>`_ ::
 
 Plot ::
     
-    evo_traj tum KeyframeTrajectory.txt --plot
+    evo_traj tum KeyFrameTrajectory.txt --plot
 
 
 
