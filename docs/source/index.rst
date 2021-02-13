@@ -44,7 +44,7 @@ underwater vehicle SLAM project at University of Maryland, College Park.
 
 .. toctree::
    :maxdepth: 2
-   :caption Camera
+   :caption: Camera
 
    sections/camera/camera_calibration
 
