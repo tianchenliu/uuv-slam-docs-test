@@ -7,7 +7,7 @@ UUV SLAM Project Documentation
 ==============================
 
 This website is used for the instructions, tutorials and study materials for 
-underwater vehicle SLAM project at University of Maryland, College Park.
+underwater vehicle SLAM project.
 
 .. toctree::
    :maxdepth: 1

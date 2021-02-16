@@ -29,9 +29,9 @@ Run: ::
 
     pip install tensorflow
 
-Verify installation: ::
+Verify installation (with GPU): ::
 
-    python -c "import tensorflow as tf; print(tf.__version__)"
+    python -c "import tensorflow as tf; tf.test.is_gpu_available()"
 
 GPU issue: if reporting missing library files, such as: ::
 
@@ -64,3 +64,10 @@ For latest version (version >= 2.4.0), install:
     - CuDNN 8.0.4
     - Optional: TensorRT 6.0
 
+Issue: 
+
+    dlerror: 'cusolver64_10.dll' not found
+
+Solution: 
+
+    Make a copy of 'cusolver64_11.dll' and rename as 'cusolver64_10.dll'
