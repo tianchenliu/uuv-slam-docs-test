@@ -21,7 +21,14 @@ underwater vehicle SLAM project at University of Maryland, College Park.
 
    sections/installation/installation
    sections/installation/opencv_installation
-   sections/installation/orb_slam_installation
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: ORB SLAM   
+
+   sections/orb_slam/orb_slam_installation
+   sections/orb_slam/orb_slam_ros_installation
+   sections/orb_slam/run_orb_slam
    
 .. toctree::
    :maxdepth: 2
@@ -35,12 +42,6 @@ underwater vehicle SLAM project at University of Maryland, College Park.
    :caption: Datasets    
    
    sections/datasets
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Run
-
-   sections/run/run_orb_slam
 
 .. toctree::
    :maxdepth: 2
