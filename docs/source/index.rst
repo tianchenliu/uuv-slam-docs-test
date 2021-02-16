@@ -48,6 +48,11 @@ underwater vehicle SLAM project at University of Maryland, College Park.
 
    sections/camera/camera_calibration
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Semantic
+
+   sections/semantic/tensorflow2_installation
 
 
 Indices and tables
