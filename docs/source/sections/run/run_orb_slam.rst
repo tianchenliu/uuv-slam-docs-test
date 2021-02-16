@@ -31,6 +31,7 @@ to ::
     ros::Subscriber sub = nodeHandler.subscribe("/usb_cam/image_raw", 1, &ImageGrabber::GrabImage,&igb);
 
 Rebuild ::
+
     ./build_ros.sh
 
 Run 
