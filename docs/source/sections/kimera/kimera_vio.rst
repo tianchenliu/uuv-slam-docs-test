@@ -101,7 +101,7 @@ Run
 Code: ::
 
     cd Kimera-VIO
-    bash ./scripts/euroc/yamelize.bash -p /media/tliu/WD_PassPort_1/slam_datasets/EuRoC
+    bash ./scripts/euroc/yamelize.bash -p /media/tliu/WD_PassPort_1/slam_datasets/EuRoC/V1_01_easy
     
 Run: ::
 
