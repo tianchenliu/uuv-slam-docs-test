@@ -55,6 +55,12 @@ underwater vehicle SLAM project.
 
    sections/semantic/tensorflow2_installation
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Kimera
+
+   sections/kimera/kimera_vio
+
 
 Indices and tables
 ==================
