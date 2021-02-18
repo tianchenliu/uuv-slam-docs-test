@@ -86,12 +86,35 @@ Install Kimera-VIO: ::
     cmake ..
     make -j $(nproc)
 
-
 (For docker installation, check https://github.com/MIT-SPARK/Kimera-VIO/blob/master/docs/kimera_vio_install.md)
 
+Error: /home/tliu/kimera_ws/Kimera-VIO/build/testKimeraVIO: error while loading shared libraries: libmetis-gtsam.so: cannot open shared object file: No such file or directory
 
-Installation ROS
-------------------
+Solution: ::
+
+    sudo cp /usr/local/lib/libmetis-gtsam.so /usr/lib
+
+
+Run
+---------
+
+Code: ::
+
+    cd Kimera-VIO
+    bash ./scripts/euroc/yamelize.bash -p /media/tliu/WD_PassPort_1/slam_datasets/EuRoC
+    
+Run: ::
+
+    cd Kimera-VIO
+    bash ./scripts/stereoVIOEuroc.bash -p "/media/tliu/WD_PassPort_1/slam_datasets/EuRoC/V1_01_easy"
+
+or directly by: ::
+
+    ./build/stereoVIOEuroc
+
+
+Installation Kimera-VIO-ROS
+-----------------------------
 
 Install ROS: ::
 
@@ -147,12 +170,6 @@ Code: ::
 
     catkin build
     source ~/kimera_ws/devel/setup.bash
-
-
-Current Issues
-----------------
-
-'catkin build': 1 package failed
 
 
 Usage
