@@ -1,8 +1,97 @@
-Kimera-VIO-ROS
+Kimera-VIO
 ====================
+
+Github: https://github.com/MIT-SPARK/Kimera-VIO
 
 Installation
 ---------------
+
+Code: ::
+
+    sudo apt-get update
+    sudo apt-get install -y --no-install-recommends apt-utils
+    sudo apt-get install -y cmake
+    sudo apt-get install -y libboost-all-dev
+
+    # (libvtk5-dev, libgtk2.0-dev in ubuntu 16.04)
+    sudo apt-get install -y \
+      build-essential unzip pkg-config \
+      libjpeg-dev libpng-dev libtiff-dev \
+      libvtk6-dev \
+      libgtk-3-dev \
+      libparmetis-dev \
+      libatlas-base-dev gfortran
+
+Install GTSAM: ::
+
+    sudo apt-get install libtbb-dev
+    git clone https://github.com/borglab/gtsam.git
+    cd gtsam
+    mkdir build
+    cd build
+    cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DCMAKE_BUILD_TYPE=Release -DGTSAM_USE_SYSTEM_EIGEN=OFF -DGTSAM_POSE3_EXPMAP=ON -DGTSAM_ROT3_EXPMAP=ON -DGTSAM_TANGENT_PREINTEGRATION=OFF ..
+    # run unit tests
+    make -j $(nproc) check
+    sudo make -j $(nproc) install
+
+Install OpenCV: ::
+
+    git clone https://github.com/opencv/opencv.git
+    cd opencv
+    git checkout tags/3.3.1
+    mkdir build
+    cd build
+    cmake -DWITH_VTK=On .. # Use -DWITH_TBB=On if you have TBB
+    sudo make -j $(nproc) install
+
+
+Install OpenGV: ::
+
+    git clone https://github.com/laurentkneip/opengv.git
+    cd opengv
+    mkdir build
+    cd build
+    # Replace path to your GTSAM's Eigen
+    cmake .. -DEIGEN_INCLUDE_DIR=/home/tliu/kimera_ws/gtsam/gtsam/3rdparty/Eigen -DEIGEN_INCLUDE_DIRS=/home/tliu/kimera_ws/gtsam/gtsam/3rdparty/Eigen
+    sudo make -j $(nproc) install
+
+Install DBoW2: ::
+
+    git clone https://github.com/dorian3d/DBoW2.git
+    cd DBoW2
+    mkdir build
+    cd build
+    cmake ..
+    sudo make -j $(nproc) install
+
+Install Kimera-RPGO: ::
+
+    git clone https://github.com/MIT-SPARK/Kimera-RPGO.git
+    cd Kimera-RPGO
+    mkdir build
+    cd build
+    cmake ..
+    sudo make -j $(nproc)
+
+Glog, Gflags: ::
+
+    sudo apt-get install libgflags-dev libgoogle-glog-dev
+
+Install Kimera-VIO: ::
+
+    git clone https://github.com/MIT-SPARK/Kimera-VIO.git
+    cd Kimera-VIO
+    mkdir build
+    cd build
+    cmake ..
+    make -j $(nproc)
+
+
+(For docker installation, check https://github.com/MIT-SPARK/Kimera-VIO/blob/master/docs/kimera_vio_install.md)
+
+
+Installation ROS
+------------------
 
 Install ROS: ::
 
