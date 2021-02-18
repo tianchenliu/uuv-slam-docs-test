@@ -150,7 +150,6 @@ GTSAM's optional dependencies: ::
     sudo apt-get install libtbb-dev
 
 KimeraVIO ROS wrapper
-++++++++++++++++++++++
 
 Code: ::
 
@@ -170,6 +169,17 @@ Code: ::
 
     catkin build
     source ~/kimera_ws/devel/setup.bash
+
+Current issue: ::
+
+    Errors << opencv3_catkin:make /home/tliu/kimera_ws/ros/logs/opencv3_catkin/build.make.000.log
+    CMake Error at /usr/lib/x86_64-linux-gnu/cmake/gflags/gflags-targets.cmake:37 (message):
+    
+    Some (but not all) targets in this export set were already defined.
+    
+    Targets Defined: gflags_shared;gflags_nothreads_shared
+    
+    Targets not yet defined: gflags_static;gflags_nothreads_static
 
 
 Usage
