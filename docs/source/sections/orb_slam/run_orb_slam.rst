@@ -22,6 +22,11 @@ Download and install `USB Camera <https://github.com/bosch-ros-pkg/usb_cam/>`_ i
 
 Edit device input (e.g., value="/dev/video0") for usb_cam-test.launch file
 
+To check device input value, use ffmpeg ::
+
+    ls -ltrh /dev/video*
+    ffplay /dev/video0
+
 Edit ORB_SLAM2/Example/ROS/ORB_SLAM2/src/ros_mono.cc ::
     
     ros::Subscriber sub = nodeHandler.subscribe("/image/image_raw", 1, &ImageGrabber::GrabImage,&igb);
