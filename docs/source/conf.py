@@ -22,7 +22,7 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = u'SLAM Project'
-copyright = u'2020, T Liu'
+copyright = u'2021, T Liu'
 author = u'T Liu'
 
 # The short X.Y version
