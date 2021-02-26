@@ -14,6 +14,12 @@ underwater vehicle SLAM project.
    :caption: Introduction
 
    sections/intro
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Literature
+
+   sections/literature/visual_slam_lit
    
 .. toctree::
    :maxdepth: 2
