@@ -63,14 +63,9 @@ underwater vehicle SLAM project.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Kimera
+   :caption: Existing
 
    sections/kimera/kimera_vio
-
-.. toctree::
-   :maxdepth: 2
-   :caption: VINS
-
    sections/vins/vins_fusion
 
 .. toctree::
