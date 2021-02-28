@@ -73,6 +73,13 @@ underwater vehicle SLAM project.
 
    sections/vins/vins_fusion
 
+.. toctree::
+   :maxdepth: 2
+   :caption: VIO-DEV
+
+   sections/vio_dev/vio_dev
+
+
 Indices and tables
 ==================
 
