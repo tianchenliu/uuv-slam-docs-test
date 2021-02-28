@@ -9,17 +9,17 @@ Cam Publisher Node
 ^^^^^^^^^^^^^^^^^^
 
 
-#. Create ROS Package
+1. Create ROS Package
 
 .. code-block::
 
    catkin_create_pkg ros_cv std_msgs roscpp rospy cv_bridge sensor_msgs image_transport rosbag
 
 
-#. 
+2. 
    Create a C++ file
 
-#. 
+3. 
    Edit ``CMakeLists.txt``\ , use OpenCV as example
 
 .. code-block::
@@ -31,10 +31,10 @@ Cam Publisher Node
    target_link_libraries(cam_pub ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})
 
 
-#. 
+4. 
    ``catkin_make`` from ws folder
 
-#. 
+5. 
    Run
 
 .. code-block::
@@ -53,13 +53,13 @@ Cam Subscriber Node
 ^^^^^^^^^^^^^^^^^^^
 
 
-#. 
+1. 
    Using the same ROS package
 
-#. 
+2. 
    Create a C++ file
 
-#. 
+3. 
    Edit ``CMakeLists.txt``\ , use OpenCV as example 
 
 .. code-block::
@@ -68,13 +68,13 @@ Cam Subscriber Node
    target_link_libraries(cam_sub ${catkin_LIBRARIES} ${OpenCV_LIBS})
 
 
-#. ``catkin_make`` from ws folder
+4. ``catkin_make`` from ws folder
 
 
-#. 
+5. 
    Make launch file for launching both nodes
 
-#. 
+6. 
    Run launch file
 
 .. code-block::
