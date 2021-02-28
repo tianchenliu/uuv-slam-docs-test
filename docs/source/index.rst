@@ -3,11 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-UUV SLAM Project Documentation
+SLAM Project Documentation
 ==============================
 
 This website is used for the instructions, tutorials and study materials for 
-underwater vehicle SLAM project.
+SLAM projects.
 
 .. toctree::
    :maxdepth: 1
