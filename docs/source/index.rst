@@ -57,9 +57,10 @@ SLAM projects.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Semantic
+   :caption: TensorFlow 2
 
-   sections/semantic/tensorflow2_installation
+   sections/tensorflow/tensorflow2_installation
+   sections/tensorflow/tf
 
 .. toctree::
    :maxdepth: 2
@@ -73,6 +74,8 @@ SLAM projects.
    :caption: VIO-DEV
 
    sections/vio_dev/vio_dev
+
+
 
 
 Indices and tables
